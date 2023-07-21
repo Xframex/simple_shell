@@ -30,13 +30,13 @@ int func_exec(char **args)
 	/* looking for the command is a builtin */
 	for (; i < sizeof(builtin_func_list) / sizeof(char *); i++)
 	{
-		/* if there is a match execute the builtin command */
+		/* if there is a match execute the command */
 		if (strcmp(args[0], builtin_func_list[i]) == 0)
 		{
 			return ((*builtin_func[i])(args));
 		}
 	}
-	/* create a new process */
+	/*  new process in proGress.. */
 	return (func_process(args));
 }
 
