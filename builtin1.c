@@ -80,7 +80,7 @@ int print_alias(list_t *node)
 	return (1);
 }
 
-/
+
 int _myalias(info_t *info)
 {
 	int i = 0;
